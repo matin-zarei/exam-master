@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:500" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:500" rel="stylesheet">
+    <title>Quiz </title>
+</head>
+<body class="bg-light">
+<div id="preloader">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<header>
+
+    <div class="container">
+        <a href="#"><img src="img/logo.png" class="img-fluid float-left" width="150"></a>
+        <font size="5" class="d-block text-right">My quizzes</font>
+    </div>
+
+</header>
+<div class="container">
+    <div class="row">
+
+        <div class="Quiz_start p-4 col-lg-5">
+
+            <div class="alert px-0 mt-5 text-center">
+
+                <strong><font size="5" class="d-block Congrat">Congratulations you have earned points</font></strong>
+
+                <strong><font size="6"><i class="fas fa-thumbs-down text-danger" id="showscore"></i> </font>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/result.js"></script>
+<script>
+    $(window).on('load', function () {
+        jQuery('#preloader').fadeOut();
+
+    });
+</script>
+</body>
+</html>

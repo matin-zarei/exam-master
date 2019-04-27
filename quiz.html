@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:500" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:500" rel="stylesheet">
+    <title>Quiz </title>
+</head>
+<body class="bg-light">
+<div id="preloader">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<header>
+
+    <div class="container">
+        <a href="#"><img src="img/logo.png" class="img-fluid float-left" width="150"></a>
+        <font size="5" class="d-block text-right">RedAcademy quizzes</font>
+    </div>
+
+</header>
+<div class="container">
+    <div class="row">
+        <div class="Quiz_start p-4 col-lg-5">
+                <strong><font size="4" class="float-right " id="quiztitle">Questtion 1 Of 9</font></strong>
+                <div id="questions">
+                    <div class="alert px-0 mt-5">
+                        <font size="5" class="font-weight-normal" id="question">question</font>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="radio" id="box-0" name="box_1">
+                            <label for="box-0" class="alert" id="answer-0">andwer0</label>
+
+                            <input type="radio" id="box-1" name="box_1">
+                            <label for="box-1" class="alert" id="answer-1">answer1</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="radio" id="box-2" name="box_1">
+                            <label for="box-2" class="alert" id="answer-2">answer2</label>
+
+                            <input type="radio" id="box-3" name="box_1">
+                            <label for="box-3" class="alert" id="answer-3">answer3</label>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(window).on('load', function () {
+            jQuery('#preloader').fadeOut();
+        });
+    </script>
+</body>
+</html>
