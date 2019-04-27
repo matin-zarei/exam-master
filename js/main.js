@@ -146,10 +146,11 @@ $(document).ready(function () {
             setTimeout(
                 function () {
                     $('*.alert').css('border', '1px solid transparent');
-                    //if all question were answered
+                    //if all question where answered
                     if (questionCounter == questionSum) {
-                        trueAnswer = trueAnswer * questionSum / 100;
-                        location.href = 'result.html?score=' + trueAnswer;
+                        trueAnswer = trueAnswer / questionSum;
+						trueAnswer = trueAnswer.toPrecision(1);
+                        trueAnswer = location.href = 'result.html?score=' + trueAnswer;
                     }
                     nextQuestion();
                 }, 2000);
